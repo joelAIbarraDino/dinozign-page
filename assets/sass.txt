@@ -1,0 +1,8 @@
+sass --watch E:\Dropbox\pixora-main\assets\scss\main.scss:E:\Dropbox\pixora-main\assets\css\main.css
+
+
+//Pranta scss
+sass --watch D:\themepure-all-html\pixora-html\assets\scss\main.scss:D:\themepure-all-html\pixora-html\assets\css\main.css
+
+//Harun scss
+sass --watch "C:\Users\Admin\Dropbox\Harun Pure\pixora\assets\scss\main.scss":"C:\Users\Admin\Dropbox\Harun Pure\pixora\assets\css\main.css"
