@@ -5594,8 +5594,7 @@ input[type=color] {
   }
 }
 .px-hero-4-video video {
-  width: 90%;
-  margin: 10px auto 0 auto;
+  width: 100%;
   object-fit: cover;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
