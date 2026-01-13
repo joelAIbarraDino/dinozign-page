@@ -3,19 +3,19 @@
 
 	// 1. Definimos la lista de imágenes (puedes agregar o quitar fácilmente)
 	const brandLogos = [
-		"brand-16.png?v=2", "brand-17.png?v=2", "brand-18.png?v=2", 
-		"brand-19.png?v=2", "brand-20.png?v=2", "brand-21.png?v=2", 
-		"brand-22.png?v=2", "brand-23.png?v=2", "brand-24.png?v=2", 
-		"brand-25.png?v=2", "brand-26.png?v=2", "brand-27.png?v=2", 
-		"brand-28.png?v=2", "brand-29.png?v=2", "brand-30.png?v=2"
+		"brand-16.png?v=3", "brand-17.png?v=3", "brand-18.png?v=3", 
+		"brand-19.png?v=3", "brand-20.png?v=3", "brand-21.png?v=3", 
+		"brand-22.png?v=3", "brand-23.png?v=3", "brand-24.png?v=3", 
+		"brand-25.png?v=3", "brand-26.png?v=3", "brand-27.png?v=3", 
+		"brand-28.png?v=3", "brand-29.png?v=3", "brand-30.png?v=3"
 	];
 
 	const brandLogos2 = [
-		"brand-1.png?v=2", "brand-2.png?v=2", "brand-3.png?v=2", 
-		"brand-4.png?v=2", "brand-5.png?v=2", "brand-6.png?v=2", 
-		"brand-7.png?v=2", "brand-8.png?v=2", "brand-9.png?v=2", 
-		"brand-10.png?v=2", "brand-11.png?v=2", "brand-12.png?v=2", 
-		"brand-13.png?v=2", "brand-14.png?v=2", "brand-15.png?v=2"
+		"brand-1.png?v=3", "brand-2.png?v=3", "brand-3.png?v=3", 
+		"brand-4.png?v=3", "brand-5.png?v=3", "brand-6.png?v=3", 
+		"brand-7.png?v=3", "brand-8.png?v=3", "brand-9.png?v=3", 
+		"brand-10.png?v=3", "brand-11.png?v=3", "brand-12.png?v=3", 
+		"brand-13.png?v=3", "brand-14.png?v=3", "brand-15.png?v=3"
 	];
 
 	function injectRandomBrands() {
@@ -35,7 +35,7 @@
 			
 			slide.innerHTML = `
 				<div class="px-brand-item">
-					<img src="assets/img/brand/${logoName}" alt="brand">
+					<img src="assets/img/brand/pequeños/${logoName}" alt="brand">
 				</div>
 			`;
 			
@@ -60,7 +60,7 @@
 			
 			slide.innerHTML = `
 				<div class="px-brand-item">
-					<img src="assets/img/brand/${logoName}" alt="brand">
+					<img src="assets/img/brand/pequeños/${logoName}" alt="brand">
 				</div>
 			`;
 			

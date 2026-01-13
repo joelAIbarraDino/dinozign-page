@@ -8720,9 +8720,14 @@ input[type=color] {
     padding-bottom: 80px;
   }
 }
+
+.px-award-2-area {
+  padding-top: 200px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .px-award-2-area {
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 10px;
   }
 }
