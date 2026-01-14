@@ -6,10 +6,11 @@ Allow: /
 
 # Bloquear carpetas de sistema y recursos que no aportan al SEO
 Disallow: /assets/css/
+Disallow: /assets/font/
+Disallow: /assets/img/
 Disallow: /assets/js/
 Disallow: /assets/PHPMailer/
 Disallow: /assets/video/
-Disallow: /temp/
 
 # Optimización para buscadores: ruta del mapa del sitio
 Sitemap: https://dinozign.com/sitemap.xml

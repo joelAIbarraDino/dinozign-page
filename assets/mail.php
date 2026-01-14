@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient
-    $recipient = "contacto@dinozign.com";
+    $recipient = "administracion@dinozign.com";
 
     // PHPMailer setup    
     try {
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password = '';
         
         //Recipients
-        $mail->setFrom('contacto@dinozign.com', 'Dinozign'); // "From" address (Sender email & name shown in inbox)
+        $mail->setFrom('administracion@dinozign.com', 'Dinozign'); // "From" address (Sender email & name shown in inbox)
         $mail->addAddress($recipient); // Admin inbox
         $mail->Subject = "$name se contacto con nosotros";
         
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_content .= "<p><strong>Se ha recibido una solicitud</strong></p>";
         $email_content .= "<p><strong>Nombre de cliente o empresa:</strong> ".$name."</p>";
         $email_content .= "<p><strong>Correo:</strong> ".$email."</p>";
-        $email_content .= "<p><strong>Whatsapp:</strong> ".$phone."</p>";
+        $email_content .= "<p><strong>WhatsApp:</strong> ".$phone."</p>";
         $email_content .= "<strong>Objetivo de proyecto:</strong>";
         $email_content .= "<p>".$message."</p>";
         $email_content .= "<strong>Mensaje:</strong>";
