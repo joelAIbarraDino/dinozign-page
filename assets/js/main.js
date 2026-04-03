@@ -50,9 +50,9 @@
 	}
 
 	if ($('.count__text').length) {
-		imagesLoaded(content, { background: true }, () => {
-			startLoader();
-		});
+		startLoader();
+		//imagesLoaded(content, { background: true }, () => {
+		//});
 	}
 
 
