@@ -1359,7 +1359,8 @@ input[type=color] {
   justify-content: center;
   align-items: center;
   color: #FEFFF8;
-  background: var(--blue-2);
+  background: #000070;
+  background: linear-gradient(90deg,rgba(0, 0, 112, 1) 0%, rgba(0, 50, 255, 1) 100%);
 }
 .loader__wrapper::after {
   position: absolute;

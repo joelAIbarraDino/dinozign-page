@@ -46,11 +46,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = new PHPMailer();
 
         $mail->isSMTP();
-        $mail->Host = '';
+        $mail->Host = 'sandbox.smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '';
-        $mail->Password = '';
+        $mail->Username = '7969e4afd75316';
+        $mail->Password = '241e2cdbeab563';
         
         //Recipients
         $mail->setFrom('administracion@dinozign.com', 'Dinozign'); // "From" address (Sender email & name shown in inbox)

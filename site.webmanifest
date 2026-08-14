@@ -8,12 +8,12 @@
     "theme_color": "#1821f5",
     "icons": [
         {
-            "src": "/assets/img/logo/android-chrome-192x192.png?v=20260612",
+            "src": "/assets/img/logo/android-chrome-192x192.png?v=20260814",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/assets/img/logo/android-chrome-512x512.png?v=20260612",
+            "src": "/assets/img/logo/android-chrome-512x512.png?v=20260814",
             "sizes": "512x512",
             "type": "image/png"
         }
