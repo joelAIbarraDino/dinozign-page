@@ -1,16 +1,9 @@
 # Robots.txt para Dinozign.com
-User-agent: *
 
-# Permitir que todo el contenido público sea indexado
+User-agent: *
 Allow: /
 
-# Bloquear carpetas de sistema y recursos que no aportan al SEO
-Disallow: /assets/css/
-Disallow: /assets/font/
-Disallow: /assets/img/
-Disallow: /assets/js/
+# Bloquear solo lo que realmente no debe rastrearse
 Disallow: /assets/PHPMailer/
-Disallow: /assets/video/
 
-# Optimización para buscadores: ruta del mapa del sitio
 Sitemap: https://dinozign.com/sitemap.xml

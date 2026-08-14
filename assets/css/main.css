@@ -1362,6 +1362,14 @@ input[type=color] {
   background: #000070;
   background: linear-gradient(90deg,rgba(0, 0, 112, 1) 0%, rgba(0, 50, 255, 1) 100%);
 }
+
+.loader__motto {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: normal;
+  font-size: clamp(.7rem, 2.5vw + 1rem, 3rem);
+}
 .loader__wrapper::after {
   position: absolute;
   bottom: 40px;
