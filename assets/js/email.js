@@ -13,6 +13,7 @@ function form(){
                 const scrollPos = window.scrollY;
 
                 const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
                 const submitBtn = form.querySelector('button[type="submit"]');
 
                 submitBtn.disabled = true;
@@ -20,15 +21,16 @@ function form(){
                 submitBtn.innerText = "PROCESANDO...";
 
                 try {
-                        const response = await fetch('/assets/mail.php', {
+                        const response = await fetch('https://dinozign-n8n.fn3tbx.easypanel.host/webhook/c0e29547-5d3c-4920-8613-9c269d0a0787', {
                                 method: 'POST',
-                                body: formData,
+                                headers: {
+                                        'Content-Type': 'application/json',
+                                        'X-Webhook-Token': 'b00c118888bd45179c08eb2fb2c1c626c0eefe1b59b35388',
+                                },
+                                body: JSON.stringify(data),
                         });
 
-                        // Intentamos obtener el JSON independientemente del status code
-                        const result = await response.json();
-
-                        if (result.ok) {
+                        if (response.ok) {
                                 form.reset();
                                 Swal.fire({
                                         icon: 'success',
@@ -40,26 +42,10 @@ function form(){
                                         scrollbarPadding: false
                                 });
                         } else {
-                                // Manejo de errores de validación (400) o servidor (500)
-                                let errorMsg = 'Ocurrió un error al enviar el formulario.';
-
-                                if (result.errors) {
-                                        if (typeof result.errors === 'object') {
-                                                // Convertimos el objeto de errores en una lista HTML
-                                                errorMsg = '<ul style="text-align: center;list-style-type: none;">';
-                                                Object.values(result.errors).forEach(err => {
-                                                errorMsg += `<li>${err}</li>`;
-                                                });
-                                                errorMsg += '</ul>';
-                                        } else {
-                                                errorMsg = result.errors; // Caso de error de PHPMailer (string)
-                                        }
-                                }
-
                                 Swal.fire({
                                         icon: 'error',
                                         title: 'Revisa los campos',
-                                        html: errorMsg, // Usamos 'html' en lugar de 'text' para renderizar la lista
+                                        text: 'Ocurrió un error al enviar el formulario.',
                                         confirmButtonColor: '#f22daa',
                                         heightAuto: false,
                                         returnFocus: false,
